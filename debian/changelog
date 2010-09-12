@@ -1,3 +1,10 @@
+goldengate (2.0.0) lucid; urgency=low
+
+  [ Jeremy Grosser ]
+  * Complete refactor to use rules rather than janky things
+
+ -- Jeremy Grosser <jeremy@synack.me>  Tue, 05 Oct 2010 16:06:08 -0700
+
 goldengate (1.0.18) lucid; urgency=low
 
   [ Ian Eure ]

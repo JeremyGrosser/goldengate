@@ -10,7 +10,9 @@ include /usr/share/cdbs/1/class/python-distutils.mk
 # Add here any variable or target overrides you need.
 
 build/goldengate::
-	python setup.py test \
+	PYTHONPATH=$(ARTIFACTS) python setup.py build_sphinx
+	GOLDENGATE_CONFIG=$(ARTIFACTS)/examples/goldengate.conf \
+		python setup.py test \
         --with-xunit --xunit-file $(ARTIFACTS)/xunit.xml \
         --with-coverage --cover-branch --cover-tests \
         --cover-outfile $(ARTIFACTS)/coverage.xml \
